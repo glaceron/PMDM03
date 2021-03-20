@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TareaPMDM</string>
+    <string name="actividad_1">Actividad 1</string>
+    <string name="actividad_2">Actividad 2</string>
+    <string name="euros">Euros</string>
+    <string name="d_lares">Dólares</string>
+    <string name="d_lares_a_euros">Dólares a euros</string>
+    <string name="euros_a_d_lares">Euros a dólares</string>
+    <string name="convertir">Convertir</string>
+    <string name="titulo">Titulo</string>
+    <string name="todo">TODO</string>
+    <string name="changed_to">Notificación cambiada a las %s</string>
+    <string name="time_selected_is">La hora seleccionada es:</string>
+    <string name="change_time">Cambia la hora</string>
+    <string name="select_time">Selecciona la hora</string>
+    <string name="new_notification">Nueva notificación</string>
+
+</resources>

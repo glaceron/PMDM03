@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemAzul"
+        android:title="Azul"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/itemVerde"
+        android:title="Verde"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/itemAmarillo"
+        android:title="Amarillo"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/itemCambio"
+        android:title="Cambio"
+        android:icon="@drawable/ic_action_valor"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/itemInfo"
+        android:title="Informacion"
+        android:icon="@drawable/ic_action_info"
+        app:showAsAction="ifRoom"/>
+
+</menu>

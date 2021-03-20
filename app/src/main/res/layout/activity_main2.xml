@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editTextMinutos"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonPonerAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="231dp"
+        android:text="Añadir Alarma" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="Minutos:" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="46dp"
+        android:text="Frase:" />
+
+    <EditText
+        android:id="@+id/editTextFrase"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="44dp"
+        android:text="Tono:" />
+
+    <RadioGroup
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="-15dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/radioButtonTono1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tono 1" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTono2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tono 2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTono3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tono 3" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTono4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tono 4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonTonoSilencio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sin sonido" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonLanzarAlarmas"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonPonerAlarma"
+        android:layout_alignStart="@+id/buttonPonerAlarma"
+        android:layout_alignLeft="@+id/buttonPonerAlarma"
+        android:layout_alignEnd="@+id/buttonPonerAlarma"
+        android:layout_alignRight="@+id/buttonPonerAlarma"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Lanzar Alarmas" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonLanzarAlarmas"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="-18dp"
+        android:layout_marginRight="-18dp"
+        android:layout_toStartOf="@+id/buttonLanzarAlarmas"
+        android:layout_toLeftOf="@+id/buttonLanzarAlarmas"
+        android:text="Tiempo hasta la siguiente alarma:" />
+
+    <TextView
+        android:id="@+id/textViewAlarma"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:text="00:00" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@+id/buttonLanzarAlarmas"
+        android:layout_toRightOf="@+id/buttonLanzarAlarmas"
+        android:text="Alarmas Restantes:" />
+
+    <TextView
+        android:id="@+id/textViewNumAlarmas"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignTop="@+id/textViewAlarma"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp" />
+
+    <Button
+        android:id="@+id/buttonBorrarAlarmas"
+        android:layout_width="190dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/buttonPonerAlarma"
+        android:layout_alignStart="@+id/buttonPonerAlarma"
+        android:layout_alignLeft="@+id/buttonPonerAlarma"
+        android:layout_alignEnd="@+id/buttonPonerAlarma"
+        android:layout_alignRight="@+id/buttonPonerAlarma"
+        android:layout_marginStart="-14dp"
+        android:layout_marginLeft="-14dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="-14dp"
+        android:layout_marginRight="-14dp"
+        android:text="Borrar Alarmas" />
+
+</RelativeLayout>
